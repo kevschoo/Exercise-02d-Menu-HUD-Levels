@@ -12,6 +12,8 @@ func update_score(s):
 	$Score.text = "Score: " + str(global.score)
 	if global.score >= 100 and global.level != 2:
 		get_tree().change_scene("res://Level/Level2.tscn")
+		global.level = 2
+
 
 func update_health(h):
 	global.health += h
